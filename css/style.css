@@ -1,4 +1,5 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Concert+One:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
 *{
    margin: 0;
    padding: 0; 
@@ -31,7 +32,7 @@ height: 25px;
  box-sizing: border-box;
 
  position: absolute;
- width: 399px;
+ width: 499px;
  height: 27px;
  left: 188px;
  top: 64px;
@@ -44,7 +45,7 @@ height: 25px;
  color:#fff;
  
  margin-top: 4%;
- margin-left: 20%;
+ margin-left: 13%;
 }
  .btn{
 
@@ -63,28 +64,33 @@ margin-left: 20%;
  }
  .currentWeather{
 
-         box-sizing: border-box;
 
-         position: absolute;
-         width: 364px;
-         height: 52.9px;
-         left: 48.64px;
-         top: 450.09px;
+box-sizing: border-box;
 
-         background: #2C3E50;
-         opacity: 0.4;
-         border: 1px solid #000000;
-         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.33);
-         border-radius: 10px;
-         transform: rotate(-90.1deg);
+position: absolute;
+width: 428.33px;
+height: 119.8px;
+left: 1.13px;
+top: 450.18px;
+
+background: #2C3E50;
+opacity: 0.4;
+border: 1px solid #000000;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.33);
+border-radius: 10px;
+transform: rotate(-90.1deg);
+
+margin-left:5% ;
+
+
 
  }
  .todayForecast{
 
 
 position: absolute;
-width: 404px;
-height: 104px;
+width: 694px;
+height: 164px;
 left: 124px;
 top: 234px;
 
@@ -92,8 +98,10 @@ background: rgba(44, 62, 80, 0.4);
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35);
 border-radius: 10px;
 
-margin-left: 15%;
-margin-top: 16.3%;
+margin-left: 20%;
+margin-top: 8.3%;
+
+
 
  }
  .airConditions{
@@ -102,8 +110,8 @@ margin-top: 16.3%;
 box-sizing: border-box;
 
 position: absolute;
-width: 404px;
-height: 103px;
+width: 464px;
+height: 200px;
 left: 124px;
 top: 347px;
 
@@ -113,8 +121,8 @@ border: 1px solid #000000;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 10px;
 
-margin-left: 15%;
-margin-top: 16.3%;
+margin-left: 20%;
+margin-top: 13.6%;
 
  }
 .daysForecast{
@@ -122,7 +130,7 @@ margin-top: 16.3%;
 
 position: absolute;
 width: 210px;
-height: 292px;
+height: 420px;
 left: 551px;
 top: 154px;
 
@@ -131,6 +139,75 @@ opacity: 0.4;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.7);
 border-radius: 10px;
 
-margin-left: 17%;
-margin-top: 16.3%;
+margin-left: 27%;
+margin-top: 10.9%;
 }
+
+.todayForecastH4{
+    margin-left: 37%;
+    opacity: 0.7;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   
+}
+
+.forecstD{
+    margin: 10px 30px;
+    color: aliceblue;
+    margin-top: 6%;
+}
+.weekF{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    
+}
+.cast-header{
+    margin-left: 37%;
+    opacity: 0.7;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top: 2.7px;
+    color: #fff;
+}
+
+.vL1{
+    border-left: 2px solid rgba(0, 0, 0, 0.313);
+    height: 100px;
+    position:absolute;
+    left: 16%;
+    bottom: 4%;
+}
+.vL2{
+    border-left: 2px solid rgba(0, 0, 0, 0.313);
+    height: 100px;
+    position:absolute;
+    left: 32%;
+    bottom: 4%;
+}
+.vL3{
+    border-left: 2px solid rgba(0, 0, 0, 0.313);
+    height: 100px;
+    position:absolute;
+    left: 47%;
+    bottom: 4%;
+}
+.vL4{
+    border-left: 2px solid rgba(0, 0, 0, 0.313);
+    height: 100px;
+    position:absolute;
+    left: 63%;
+    bottom: 4%;
+}
+.vL5{
+    border-left: 2px solid rgba(0, 0, 0, 0.313);
+    height: 100px;
+    position:absolute;
+    left: 78%;
+    bottom: 4%;
+}
+.vL6{
+    border-left: 2px solid rgba(0, 0, 0, 0.313);
+    height: 100px;
+    position:absolute;
+    left: 125%;
+    bottom: 4%;
+}
+
