@@ -7,26 +7,94 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
     <section>
-        <!-- <div class="searchTxt">
-            <input type="text" placeholder="Search area">
-            <button>Search</button>
-        </div> -->
+       
        <div class="Weather">
-        <div class="frame">
-            <div>
-                <input type="text" placeholder="Search area" class="searchTxt">
-                <button class="btn">Search</button>
+            <div class="header">
+                <!-- <h1>WEATHER APP</h1> -->
+                <div>
+                    <input type="text" placeholder="Search area" class="searchTxt">
+                    <button class="btn">Search</button></input>
+                    <!-- <button id="search" onclick="searchByCity()">Search</button></input> -->
+                </div>
             </div>
+            <main>    
+                <div class="todayForecast">
+                    <div class="cast-header">
+                        <p > Today's Forecast</p>
+                    </div>
+                   
+                   <div class="forecstD">
+                    <div class="weekF">
+            
+                        <div class="dayF1">
+                            <p class="time">6.00 &nbsp;A.M</p>
+                            <img src="img/icons8-clouds-48.png" alt="" class="imgCloud">
+                            <p class="temp1">25 °C</p>
+                            <div class="vL1"></div> 
+                        </div>
+            
+                        <div class="dayF2">
+                            <p class="time">6.00 &nbsp;A.M</p>
+                            <img src="img/icons8-clouds-48.png" alt="" class="imgCloud">
+                            <p class="temp1">25 °C</p>
+                            <div class="vL2"></div> 
+                        </div>
+            
+                        <div class="dayF3">
+                            <p class="time">6.00 &nbsp;A.M</p>
+                            <img src="img/icons8-clouds-48.png" alt="" class="imgCloud">
+                            <p class="temp1">25 °C</p>
+                            <div class="vL3"></div> 
+                        </div>
+            
+                        <div class="dayF4">
+                            <p class="time">6.00 &nbsp;A.M</p>
+                            <img src="img/icons8-clouds-48.png" alt="" class="imgCloud">
+                            <p class="temp1">25 °C</p>
+                            <div class="vL4"></div> 
+                        </div>
+                        <div class="dayF4">
+                            <p class="time">6.00 &nbsp;A.M</p>
+                            <img src="img/icons8-clouds-48.png" alt="" class="imgCloud">
+                            <p class="temp1">25 °C</p>
+                            <div class="vL5"></div> 
+                        </div>
+                        <div class="dayF4">
+                            <p class="time">6.00 &nbsp;A.M</p>
+                            <img src="img/icons8-clouds-48.png" alt="" class="imgCloud">
+                            <p class="temp1">25 °C</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                  
+                </div>    
+             
+            </main>
             <div class="currentWeather"></div>
-            <div class="todayForecast"></div>
-            <div class="airConditions"></div>
+            
+            <div class="airConditions">
+                <div class="air-header">
+                    <p> AIR CONDITIONS</p>
+                </div>
+               <!-- ----real feel-------- -->
+               <div>
+                <h4 class="realH6">Real Feel</h4>
+                <img src="icon/icons8-temperature-16.png" class="temperatureIcon">
+                <h5 class="celsiusReal">31 °C</h5>
+               </div>
+                
+               
+
+            </div>
             <div class="daysForecast"></div>
-        </div>
+       
        
        </div>
       
     </section>
-  
+    
 </body>
 </html>
