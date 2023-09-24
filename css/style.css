@@ -152,6 +152,36 @@ border-radius: 10px;
     padding-top:3%;
     color: #fff;
 }
+
+.next1{
+    margin-left: 4%;
+    margin-top: 4%;
+}
+
+.next2{
+  margin-left: 60%;
+  
+}
+.d1{
+    margin-bottom: 10%;
+}
+.next1 p{
+    margin: 3px 100;
+    margin-bottom: 0%;
+    
+}
+
+.time{
+    color: rgb(254, 189, 132);
+   
+}
+.desc{
+    color: rgb(196, 255, 77);
+    
+}
+/* .airReel{
+    
+} */
 .realH6{
     color: #fff;
     opacity: 0.5;
@@ -195,6 +225,9 @@ margin-left: 1%;
 }
 .iconUv{
     width: 50px;
+}
+.realFeel{
+   margin-bottom: 5%;
 }
 /* --------------------------------------------- */
 .daysForecast{
