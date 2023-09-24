@@ -189,7 +189,14 @@ margin-left: 1%;
     margin-left: 3%;
    
 }
-
+.iconTemp{
+    width: 60%;
+    height: 20px;
+}
+.iconUv{
+    width: 50px;
+}
+/* --------------------------------------------- */
 .daysForecast{
    
 
