@@ -62,18 +62,121 @@ height: 119.8px;
 /* left: 1.13px; */
 top: 450.18px;
 
-background: #2C3E50;
+/* background: #2C3E50; */
+background-color: #fff;
 opacity: 0.4;
 border: 1px solid #000000;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.33);
+/* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.33); */
 border-radius: 10px;
 transform: rotate(-90.1deg);
 margin-right: 100px;
 
-
-
-
  }
+ .currentWind{
+    width: 100px;
+    height: 80px;
+    border-radius: 4px;
+    /* background-color: #2C3E50; */
+    margin-right: 5%;
+    margin-left: 4%;
+    rotate: 90deg;
+ }
+ .wetherCurrent{
+    width: 100px;
+    height: 80px;
+    border-radius: 4px;
+    /* background-color:  #2C3E50; */
+    margin-right: 5%;
+    rotate: 90deg;
+ }
+ .currentArea{
+    width: 100px;
+    height: 80px;
+    border-radius: 4px;
+    /* background-color:  #2C3E50; */
+    margin-right: 5%;
+    rotate: 90deg;  
+ }
+ .currentMap{
+    width: 100px;
+    height: 80px;
+    border-radius: 4px;
+    /* background-color:  #2C3E50; */
+    margin-right: 5%;
+    rotate: 90deg;
+ }
+ .currentSetting{
+    width: 100px;
+    height: 80px;
+    border-radius: 4px;
+    /* background-color: #2C3E50; */
+    margin-right: 5%;
+    rotate: 90deg;
+ }
+
+.eventCurrent1{
+    margin-left: 20%;
+    margin-top: 5%;
+    color: #000000;
+}
+.eventCurrent2{
+    margin-left: 5%;
+    margin-top: 5%;
+}
+.eventCurrent3{
+    margin-left: 10%;
+    margin-top: 5%;
+}
+.eventCurrent4{
+    margin-left: 20%;
+    margin-top: 5%;
+}
+.eventCurrent5{
+    margin-left: 15%;
+    margin-top: 5%;
+}
+.iconCurrentWind{
+    width: 50px;
+ } 
+ .iconCurrentWeather{
+    width: 50px;
+ }
+ .iconCurrentLocation{
+    width: 50px;
+ }
+ .iconCurrentMap{
+    width: 50px;
+ }
+ .iconCurrentSetting{
+    width: 50px;
+ }
+ .currentForecast{
+        display: flex;
+        margin-top: 5%;
+    
+ }
+
+ /* .windP{
+    color: #000000;
+    /* margin-left: 70%; */
+    /* writing-mode: vertical-rl;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;  */
+    /* margin-top: 1%;
+    margin-bottom: 1%;
+    margin-right: 2%; */
+    /* margin-left: 2%; */
+ /* } */
+/* .cwind{
+    margin-top: 8.7%;
+    margin-left: 83%;
+}
+*/
+
  /* ---------------------------------------------- */
  .todayForecast{
 
@@ -261,7 +364,7 @@ border-radius: 10px;
 margin-left: 36%;
 margin-top: 11.5%;
 }
-
+/* -------------------------------------------------------- */
 .todayForecastH4{
     margin-left: 37%;
     opacity: 0.7;
@@ -330,3 +433,49 @@ margin-top: 11.5%;
     bottom: 4%;
 }
 
+/* ================================================= */
+ /* .currentDivWind{
+    width: 70px;
+    height: 50px;
+    background-color: #000000;
+    margin-left: 80%;
+    margin-top: 7%;
+    rotate: 90deg;
+    border: 1px solid #fc0d0d;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.33);
+    border-radius: 10px;
+    
+ }
+ .currentIconWind{
+    margin-left: 25%;
+    margin-top: 10%;
+    width: 60%;
+ }
+ .currentWindP{
+    color: #fff2f2;
+   margin-left: 30%;
+   margin-top: 20%;
+   
+ }
+ .currentDivWeather{
+    width: 70px;
+    height: 50px;
+    background-color: #000000;
+    rotate: 90deg;
+    border: 1px solid #fc0d0d;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.33);
+    border-radius: 10px;
+    margin-left: 200px;
+ }
+ .currentDivArea{
+    width: 70px;
+    height: 50px;
+    background-color: #000000;
+    rotate: 90deg;
+    border: 1px solid #fc0d0d;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.33);
+    border-radius: 10px;
+    margin-left: 200px;
+    margin-top: 0%;
+    margin-bottom: 50%;
+ } */
