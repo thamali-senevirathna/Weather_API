@@ -152,82 +152,96 @@ border-radius: 10px;
     padding-top:3%;
     color: #fff;
 }
-
-.next1{
+.realFeelDiv{
+    width: 100px;
+    height: 100px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35);
+    border-radius: 4px;
+    background-color: #1171d1;
+    margin-right: 10%;
     margin-left: 4%;
-    margin-top: 4%;
-}
-
-.next2{
-  margin-left: 60%;
-  
-}
-.d1{
-    margin-bottom: 10%;
-}
-.next1 p{
-    margin: 3px 100;
-    margin-bottom: 0%;
-    
-}
-
-.time{
-    color: rgb(254, 189, 132);
-   
-}
-.desc{
-    color: rgb(196, 255, 77);
-    
-}
-/* .airReel{
-    
-} */
-.realH6{
-    color: #fff;
-    opacity: 0.5;
-    width: 100px;
-    margin-left: 9%;
-    margin-top: 1%;
-}
-.windH4{
-    color: #fff;
-    opacity: 0.5;
-    width: 100px;
-    margin-left:50%;
-    margin-bottom:30% ;
-}
-.rainH4{
-    color: #fff;
-    opacity: 0.5;
-}
-.uvH4{
-    color: #fff;
-    opacity: 0.5;
-}
-.celsiusReal{
-    color: #fff;
-    opacity: 0.5;
 
 }
-
-.temperatureIcon{
-margin-left: 1%;
-
-}
-.realDiv{
-    margin-left: 11%;
-    margin-left: 3%;
-   
+.realFeelDiv h3{
+    margin-left: 10%;
+    margin-top: 7%;
+    font-family: 'Pinyon Script', cursive;
 }
 .iconTemp{
-    width: 60%;
-    height: 20px;
+    margin-left: 30%;
+    margin-top: 7%;
+}
+.wind{
+    width: 100px;
+    height: 100px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35);
+    border-radius: 4px;
+    background-color: #1171d1;
+    margin-right: 10%;
+}
+.wind h3{
+    margin-left: 25%;
+    margin-top: 7%;
+    font-family: 'Pinyon Script', cursive;
+}
+.iconWind{
+    margin-left: 30%;
+    margin-top: 7%;
+}
+.rain{
+    width: 100px;
+    height: 100px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35);
+    border-radius: 4px;
+    background-color: #1171d1;
+    margin-right: 10%;
+}
+.rain h3{
+    margin-left: 25%;
+    margin-top: 7%;
+    font-family: 'Pinyon Script', cursive;
+}
+.iconRain{
+    margin-left: 30%;
+    margin-top: 7%;
+    
+}
+.uvIndex{
+    width: 100px;
+    height: 100px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35);
+    border-radius: 4px;
+    background-color: #1171d1;
+    margin-right: 10%;
+}
+.uvIndex h3{
+    margin-left: 10%;
+    margin-top: 7%;
+    font-family: 'Pinyon Script', cursive;
 }
 .iconUv{
-    width: 50px;
+    margin-left: 30%;
+    margin-top: 7%;
 }
-.realFeel{
-   margin-bottom: 5%;
+.forecstH{
+    display: flex;
+    margin-top: 5%;
+}
+.speed1{
+    margin-left: 40%;
+    margin-top: 5%;
+}
+.speed2{
+    margin-left: 26%;
+    margin-top: 5%;
+}
+.speed3{
+    margin-left: 40%;
+    margin-top: 5%;
+}
+.speed4{
+    margin-left: 49%;
+    margin-top: 5%;
 }
 /* --------------------------------------------- */
 .daysForecast{
