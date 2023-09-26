@@ -6,21 +6,15 @@
    box-sizing: border-box;
 }
 body{
-    height: 110vh;
+    background-attachment: fixed;
     background-size: cover;
     font-family: 'Roboto', sans-serif;
     text-transform: capitalize;
-    background-image:url('/img/backgroud.jpg');
-    /* filter: blur(8px);
-  -webkit-filter: blur(8px); */
-  /* -webkit-filter: blur(5px);
--moz-filter: blur(5px);
--o-filter: blur(5px);
--ms-filter: blur(5px);
-filter: blur(5px); */
-
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url('/img/backgroud.jpg');
+    
     background-position: center;
     background-size: cover;
+    height: 110vh;
     
     
     
@@ -33,7 +27,6 @@ filter: blur(5px); */
  height: 27px;
  left: 188px;
  top: 64px;
- background: #2C3E50;
  opacity: 0.4;
  border: 1px solid #000000;
  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
@@ -48,7 +41,7 @@ width: 65px;
 height: 27px;
 left: 619px;
 top: 62px;
-background: #D9D9D9;
+
 border-radius: 200px;
 margin-top: 2.1%;
 margin-left: 20%;
@@ -56,7 +49,7 @@ margin-left: 20%;
  /* ----------------------------------------------------- */
  .areaWeather{
     text-align: center;
-    color: aliceblue;
+    
 }
 #city{
     font-size: 40px;
@@ -68,7 +61,7 @@ margin-left: 20%;
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    background: rgba(240, 248, 255, 0.408);
+   
 }
 #temperature{
     font-size: 50px;
@@ -84,26 +77,24 @@ margin-left: 20%;
     margin-right: 10%;
     margin-bottom: 4%;
 }
- /* -------------------------------------------------- */
+ /* --------------Current------------------------------------ */
  .currentWeather{
 
 
 box-sizing: border-box;
-
+background-color: #FFFFFF;
 position: absolute;
 width: 468.33px;
 height: 119.8px;
+right: 74%;
 margin-top: 4.5%;
-
-background-color: #2C3E50;
-opacity: 0.4;
+margin-bottom: 5%;
 border: 1px solid #000000;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.33);
 border-radius: 10px;
 transform: rotate(-90.1deg);
-margin-right: 100px;
-
  }
+ 
  .currentWind{
     width: 100px;
     height: 80px;
@@ -192,28 +183,8 @@ margin-right: 100px;
     
  }
 
-
- /* ---------------------------------------------- */
- .todayForecast{
-
-
-position: absolute;
-width: 694px;
-height: 164px;
-left: 124px;
-top: 234px;
-
-background: rgba(44, 62, 80, 0.4);
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35);
-border-radius: 10px;
-
-margin-left: 14%;
-margin-top: 8.3%;
-
-
-
- }
- /* ------------------------------------------------- */
+ 
+ /* -----------------Air Conditions-------------------------------- */
  .airConditions{
    
 
@@ -222,24 +193,17 @@ box-sizing: border-box;
 position: absolute;
 width: 694px;
 height: 200px;
-left: 124px;
+left: 30px;
 top: 347px;
-
-
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35);
 border-radius: 10px;
 
 margin-left: 14%;
 margin-top: 13.6%;
-
-
-
-background: #2C3E50;
-opacity: 0.4;
 border: 1px solid #000000;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 10px;
-
+background-color: #FFFFFF;
 
  }
  .btnSee{
@@ -266,9 +230,8 @@ border-radius: 10px;
 
 .air-header{
     margin-left: 37%;
-    opacity: 0.7;
+    padding-top: 2%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding-top:3%;
     color: #fff;
 }
 .realFeelDiv{
@@ -279,7 +242,7 @@ border-radius: 10px;
     background-color: #1171d1;
     margin-right: 10%;
     margin-left: 4%;
-
+  
 }
 .realFeelDiv h3{
     margin-left: 10%;
@@ -362,24 +325,21 @@ border-radius: 10px;
     margin-left: 49%;
     margin-top: 5%;
 }
-/* --------------------------------------------- */
+/* -----------------7-Days---------------------------- */
 .daysForecast{
    
 
 position: absolute;
-width: 240px;
+width: 280px;
 height: 420px;
-left: 551px;
-top: 154px;
-
-background: #2C3E50;
-opacity: 0.4;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.7);
+left: 40%;
 border-radius: 10px;
+margin-left: 34%;
+margin-bottom: 10%;
+background-color: #FFFFFF;
 
-margin-left: 36%;
-margin-top: 11.5%;
 }
+
 .days{
     font-size: 14px;
     color: #FFFFFF;
@@ -397,13 +357,16 @@ margin-top: 11.5%;
     
 }
 .daysCloudyIcon{
-    width: 50px;
+    width: 40px;
+    margin-left: 20%;
 }
 .daysRainyIcon{
     width: 40px;
+    margin-left: 20%;
 }
 .daysStromIcon{
-    width: 40px;
+    width: 35px;
+    margin-left: 21%;
 }
 .date{
 font-size: 12px;
@@ -412,21 +375,36 @@ color: #FFFFFF;
 }
 .table{
     margin-left: 5%;
-    margin-top:11%;
+    margin-top:10%;
     width: 176px;
-}
-.underLine{
-    color: #000000a9;
+    
 }
 .dfp{
-  margin-left: 25%;
-  margin-top: 7%;
-  color: #ffffffc3;  
+    margin-left: 24%;
+   padding-top: 5%;
 }
-/* -------------------------------------------------------- */
+
+
+/* --------------------todays------------------------------------ */
+.todayForecast{
+
+
+    position: absolute;
+    width: 694px;
+    height: 164px;
+    left: 30px;
+    top: 234px;
+    /* background: rgba(44, 62, 80, 0.4); */
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35);
+    border-radius: 10px;
+    
+    margin-left: 14%;
+    margin-top: 8.3%;
+    
+         }
 .todayForecastH4{
     margin-left: 37%;
-    opacity: 0.7;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
    
 }
@@ -442,33 +420,35 @@ color: #FFFFFF;
     
 }
 .cast-header{
-    margin-left: 37%;
-    opacity: 0.7;
+    
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-top: 2%;
     color: #fff;
+    margin-left: 37%;
 }
 
 .vL1{
     border-left: 2px solid rgba(0, 0, 0, 0.313);
     height: 100px;
     position:absolute;
-    left: 16%;
+    left: 17%;
     bottom: 4%;
+    background-color: #FFFFFF;
 }
 .vL2{
     border-left: 2px solid rgba(0, 0, 0, 0.313);
     height: 100px;
     position:absolute;
-    left: 32%;
+    background-color: #FFFFFF;
     bottom: 4%;
+   margin-left:12%;
 }
 .vL3{
     border-left: 2px solid rgba(0, 0, 0, 0.313);
     height: 100px;
     position:absolute;
-    left: 47%;
     bottom: 4%;
+    margin-left: 12%;
+    background-color: #FFFFFF;
 }
 .vL4{
     border-left: 2px solid rgba(0, 0, 0, 0.313);
@@ -476,19 +456,16 @@ color: #FFFFFF;
     position:absolute;
     left: 63%;
     bottom: 4%;
+    background-color: #FFFFFF;
+    margin-left: -1%;
 }
 .vL5{
     border-left: 2px solid rgba(0, 0, 0, 0.313);
     height: 100px;
     position:absolute;
-    left: 78%;
+    margin-left: 12%;
     bottom: 4%;
+    background-color: #FFFFFF;
 }
-.vL6{
-    border-left: 2px solid rgba(0, 0, 0, 0.313);
-    height: 100px;
-    position:absolute;
-    left: 125%;
-    bottom: 4%;
-}
+
 
