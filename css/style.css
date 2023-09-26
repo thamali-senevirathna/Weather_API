@@ -3,61 +3,55 @@
 *{
    margin: 0;
    padding: 0; 
+   box-sizing: border-box;
 }
 body{
-    height: 150vh;
-    background-image: url("https://images.pexels.com/photos/325676/pexels-photo-325676.jpeg?auto=compress&cs=tinysrgb&w=600");
+    height: 110vh;
     background-size: cover;
-
-    background: whitesmoke;
-    
     font-family: 'Roboto', sans-serif;
     text-transform: capitalize;
-    background: linear-gradient(45deg,rgba(183, 204, 248, 0.717),rgba(7, 43, 127, 0.679)), url('');
+    background-image:url('/img/backgroud.jpg');
+    /* filter: blur(8px);
+  -webkit-filter: blur(8px); */
+  /* -webkit-filter: blur(5px);
+-moz-filter: blur(5px);
+-o-filter: blur(5px);
+-ms-filter: blur(5px);
+filter: blur(5px); */
+
     background-position: center;
     background-size: cover;
-    /* background-repeat: no-repeat;
-    */
-  
+    
+    
+    
 }
-
 /* --------------------------------------------------------------------- */
 .searchTxt{
-
  box-sizing: border-box;
-
  position: absolute;
  width: 499px;
  height: 27px;
  left: 188px;
  top: 64px;
- 
  background: #2C3E50;
- 
-
  opacity: 0.4;
  border: 1px solid #000000;
  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
  border-radius: 10px;
  color:#fff;
- 
  margin-top: 2%;
  margin-left: 13%;
 }
  .btn{
-
 position: absolute;
 width: 65px;
 height: 27px;
 left: 619px;
 top: 62px;
-
 background: #D9D9D9;
 border-radius: 200px;
-
 margin-top: 2.1%;
 margin-left: 20%;
-
  }
  /* ----------------------------------------------------- */
  .areaWeather{
