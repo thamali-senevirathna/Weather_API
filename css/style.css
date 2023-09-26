@@ -6,12 +6,19 @@
 }
 body{
     height: 150vh;
-    /* background-image: url("https://images.pexels.com/photos/325676/pexels-photo-325676.jpeg?auto=compress&cs=tinysrgb&w=600");
-    background-size: cover; */
+    background-image: url("https://images.pexels.com/photos/325676/pexels-photo-325676.jpeg?auto=compress&cs=tinysrgb&w=600");
+    background-size: cover;
+
+    background: whitesmoke;
+    
+    font-family: 'Roboto', sans-serif;
+    text-transform: capitalize;
+    background: linear-gradient(45deg,rgba(183, 204, 248, 0.717),rgba(7, 43, 127, 0.679)), url('');
+    background-position: center;
+    background-size: cover;
+    /* background-repeat: no-repeat;
+    */
   
-   
-   
- 
 }
 
 /* --------------------------------------------------------------------- */
@@ -26,6 +33,8 @@ body{
  top: 64px;
  
  background: #2C3E50;
+ 
+
  opacity: 0.4;
  border: 1px solid #000000;
  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
@@ -50,6 +59,37 @@ margin-top: 2.1%;
 margin-left: 20%;
 
  }
+ /* ----------------------------------------------------- */
+ .areaWeather{
+    text-align: center;
+    color: aliceblue;
+}
+#city{
+    font-size: 40px;
+    color: #000000;
+    margin-top: 12%;
+    margin-right: 20%;
+}
+.areaWeather img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: rgba(240, 248, 255, 0.408);
+}
+#temperature{
+    font-size: 50px;
+    margin: 0;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    color: #000000;
+}
+.temp-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10%;
+    margin-bottom: 4%;
+}
  /* -------------------------------------------------- */
  .currentWeather{
 
@@ -57,16 +97,14 @@ margin-left: 20%;
 box-sizing: border-box;
 
 position: absolute;
-width: 428.33px;
+width: 468.33px;
 height: 119.8px;
-/* left: 1.13px; */
-top: 450.18px;
+margin-top: 4.5%;
 
-/* background: #2C3E50; */
-background-color: #fff;
+background-color: #2C3E50;
 opacity: 0.4;
 border: 1px solid #000000;
-/* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.33); */
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.33);
 border-radius: 10px;
 transform: rotate(-90.1deg);
 margin-right: 100px;
@@ -76,8 +114,7 @@ margin-right: 100px;
     width: 100px;
     height: 80px;
     border-radius: 4px;
-    /* background-color: #2C3E50; */
-    margin-right: 5%;
+    margin-right: 3%;
     margin-left: 4%;
     rotate: 90deg;
  }
@@ -85,70 +122,75 @@ margin-right: 100px;
     width: 100px;
     height: 80px;
     border-radius: 4px;
-    /* background-color:  #2C3E50; */
-    margin-right: 5%;
+    margin-right: -1%;
     rotate: 90deg;
  }
  .currentArea{
     width: 100px;
     height: 80px;
     border-radius: 4px;
-    /* background-color:  #2C3E50; */
-    margin-right: 5%;
+    margin-right: 3%;
     rotate: 90deg;  
  }
  .currentMap{
     width: 100px;
     height: 80px;
     border-radius: 4px;
-    /* background-color:  #2C3E50; */
-    margin-right: 5%;
+    margin-right: 3%;
     rotate: 90deg;
  }
  .currentSetting{
     width: 100px;
     height: 80px;
     border-radius: 4px;
-    /* background-color: #2C3E50; */
-    margin-right: 5%;
+    margin-right: 3%;
     rotate: 90deg;
  }
 
 .eventCurrent1{
-    margin-left: 20%;
+    margin-left: 27%;
     margin-top: 5%;
-    color: #000000;
+    color: #FFFFFF;
 }
 .eventCurrent2{
-    margin-left: 5%;
+    margin-left: 18%;
     margin-top: 5%;
+    color: #FFFFFF;
 }
 .eventCurrent3{
-    margin-left: 10%;
-    margin-top: 5%;
-}
-.eventCurrent4{
     margin-left: 20%;
     margin-top: 5%;
+    color: #FFFFFF;
+}
+.eventCurrent4{
+    margin-left: 30%;
+    margin-top: 5%;
+    color: #FFFFFF;
 }
 .eventCurrent5{
-    margin-left: 15%;
+    margin-left: 24%;
     margin-top: 5%;
+    color: #FFFFFF;
 }
 .iconCurrentWind{
     width: 50px;
+    margin-left:15%;
  } 
  .iconCurrentWeather{
     width: 50px;
+    margin-left: 15%;
  }
  .iconCurrentLocation{
     width: 50px;
+    margin-left: 15%;
  }
  .iconCurrentMap{
     width: 50px;
+    margin-left: 15%;
  }
  .iconCurrentSetting{
     width: 50px;
+    margin-left: 15%;
  }
  .currentForecast{
         display: flex;
@@ -156,26 +198,6 @@ margin-right: 100px;
     
  }
 
- /* .windP{
-    color: #000000;
-    /* margin-left: 70%; */
-    /* writing-mode: vertical-rl;
-    font-family: 'Orbitron', sans-serif;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 24px;
-    letter-spacing: 0.02em;
-    text-transform: uppercase;  */
-    /* margin-top: 1%;
-    margin-bottom: 1%;
-    margin-right: 2%; */
-    /* margin-left: 2%; */
- /* } */
-/* .cwind{
-    margin-top: 8.7%;
-    margin-left: 83%;
-}
-*/
 
  /* ---------------------------------------------- */
  .todayForecast{
@@ -351,12 +373,12 @@ border-radius: 10px;
    
 
 position: absolute;
-width: 210px;
+width: 240px;
 height: 420px;
 left: 551px;
 top: 154px;
 
-background: #2c3e5089;
+background: #2C3E50;
 opacity: 0.4;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.7);
 border-radius: 10px;
@@ -366,8 +388,46 @@ margin-top: 11.5%;
 }
 .days{
     font-size: 14px;
-    color: #000000;
-    /* margin-left: 10px; */
+    color: #FFFFFF;
+    margin-left: 6%;
+    
+}
+.weatherDay{
+    color: #FFFFFF;
+    font-size: 14px;
+    margin-left: 4%;
+}
+.daysSunnyIcon{
+    width: 40px;
+    margin-left:8px;
+    
+}
+.daysCloudyIcon{
+    width: 50px;
+}
+.daysRainyIcon{
+    width: 40px;
+}
+.daysStromIcon{
+    width: 40px;
+}
+.date{
+font-size: 12px;
+margin-left: 10%;
+color: #FFFFFF;
+}
+.table{
+    margin-left: 5%;
+    margin-top:11%;
+    width: 176px;
+}
+.underLine{
+    color: #000000a9;
+}
+.dfp{
+  margin-left: 25%;
+  margin-top: 7%;
+  color: #ffffffc3;  
 }
 /* -------------------------------------------------------- */
 .todayForecastH4{
@@ -438,49 +498,3 @@ margin-top: 11.5%;
     bottom: 4%;
 }
 
-/* ================================================= */
- /* .currentDivWind{
-    width: 70px;
-    height: 50px;
-    background-color: #000000;
-    margin-left: 80%;
-    margin-top: 7%;
-    rotate: 90deg;
-    border: 1px solid #fc0d0d;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.33);
-    border-radius: 10px;
-    
- }
- .currentIconWind{
-    margin-left: 25%;
-    margin-top: 10%;
-    width: 60%;
- }
- .currentWindP{
-    color: #fff2f2;
-   margin-left: 30%;
-   margin-top: 20%;
-   
- }
- .currentDivWeather{
-    width: 70px;
-    height: 50px;
-    background-color: #000000;
-    rotate: 90deg;
-    border: 1px solid #fc0d0d;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.33);
-    border-radius: 10px;
-    margin-left: 200px;
- }
- .currentDivArea{
-    width: 70px;
-    height: 50px;
-    background-color: #000000;
-    rotate: 90deg;
-    border: 1px solid #fc0d0d;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.33);
-    border-radius: 10px;
-    margin-left: 200px;
-    margin-top: 0%;
-    margin-bottom: 50%;
- } */
