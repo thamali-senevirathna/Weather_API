@@ -23,19 +23,24 @@ body{
 .searchTxt{
  box-sizing: border-box;
  position: absolute;
- width: 499px;
+ width: 500px;
  height: 27px;
  left: 188px;
  top: 64px;
- opacity: 0.4;
- border: 1px solid #000000;
+ border: 2px solid #0a28c0;
  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
  border-radius: 10px;
- color:#fff;
+ color:#000000;
  margin-top: 2%;
  margin-left: 13%;
+ background-color: #fff;
+ padding-left: 20px;
+ font-size: 20px;
 }
- .btn{
+.searchTxt[type=text]:hover{
+border:2px solid #000000;
+}
+ .btn {
 position: absolute;
 width: 65px;
 height: 27px;
@@ -45,7 +50,20 @@ top: 62px;
 border-radius: 200px;
 margin-top: 2.1%;
 margin-left: 20%;
+transform: scale(1.1);
+background-color: #333;
+
  }
+ .btn:hover{
+    box-shadow: 0 0 8px #f4e40198;
+
+ }
+ .btn i:hover::before{
+  color: #ffee10;
+  box-shadow: 0 0 5px #ffee10;
+  text-shadow: 0 0 5px #ffee10;
+ }
+
  /* ----------------------------------------------------- */
  .areaWeather{
     text-align: center;
@@ -57,19 +75,21 @@ margin-left: 20%;
     color: #000000;
     margin-top: 12%;
     margin-right: 20%;
+    padding-bottom: 3px;
     color: #FFFFFF;
 }
 .areaWeather img{
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
+    width: 140px;
+    height: 140px;
+    border-radius: 30%;
+    background-color: #0000004e;
    
 }
 #temperature{
     font-size: 50px;
     margin: 0;
-    margin-left: 30px;
-    margin-bottom: 10px;
+    margin-left: 31px;
+    margin-bottom: 16px;
     color: #FFFFFF;
 }
 .temp-box{
@@ -84,7 +104,7 @@ margin-left: 20%;
 
 
 box-sizing: border-box;
-/* background-color: #FFFFFF; */
+background-color: #ffffff42;
 position: absolute;
 width: 468.33px;
 height: 119.8px;
@@ -205,7 +225,7 @@ margin-top: 13.6%;
 border: 1px solid #000000;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 10px;
-/* background-color: #FFFFFF; */
+background-color: #ffffff42;
 
  }
  .btnSee{
@@ -217,6 +237,9 @@ border-radius: 10px;
     height: 25px;
     border-radius: 5px;
     margin-left:85%;
+ }
+ .btnSee:hover{
+    background-color: #000000;
  }
    .airConD{
     margin: 10px 30px;
@@ -338,7 +361,7 @@ left: 40%;
 border-radius: 10px;
 margin-left: 34%;
 margin-bottom: 90%;
-/* background-color: #FFFFFF; */
+background-color: #ffffff42;
 
 }
 
@@ -351,28 +374,28 @@ margin-bottom: 90%;
 .weatherDay{
     color: #FFFFFF;
     font-size: 14px;
-    margin-left: 4%;
+   padding-left: 8%;
 }
 .daysSunnyIcon{
     width: 40px;
-    margin-left:8px;
+    margin-left:20px;
     
 }
 .daysCloudyIcon{
     width: 40px;
-    margin-left: 20%;
+    margin-left: 32%;
 }
 .daysRainyIcon{
     width: 40px;
-    margin-left: 20%;
+    margin-left: 32%;
 }
 .daysStromIcon{
     width: 35px;
-    margin-left: 21%;
+    margin-left: 32%;
 }
 .date{
 font-size: 12px;
-margin-left: 10%;
+padding-left: 10%;
 color: #FFFFFF;
 }
 .table{
@@ -386,6 +409,9 @@ color: #FFFFFF;
    padding-top: 5%;
    color: #FFFFFF;
 }
+.underLine{
+    width: 240px;
+}
 
 
 /* --------------------todays------------------------------------ */
@@ -397,13 +423,12 @@ color: #FFFFFF;
     height: 164px;
     left: 30px;
     top: 234px;
-    /* background: rgba(44, 62, 80, 0.4); */
-    /* background-color: #FFFFFF; */
+    background-color: #ffffff42;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35);
     border-radius: 10px;
     
     margin-left: 14%;
-    margin-top: 8.3%;
+    margin-top: 12.3%;
     
          }
 .todayForecastH4{
@@ -427,6 +452,7 @@ color: #FFFFFF;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #fff;
     margin-left: 37%;
+    padding-top: 10px;
 }
 
 .vL1{
