@@ -498,3 +498,27 @@ color: #FFFFFF;
 }
 
 
+/* ===============+++++++++++responsive+++++++++++++++========================================================================================== */
+/* .section{
+    width:100%;
+
+} */
+/* @media (min-width: 475px) {
+    .section {
+       
+        max-width: 475px;
+    }
+    .header{
+        padding-right: 0.6rem;
+    }
+    .currentWeather{
+        margin-left: 200px;
+        margin-bottom: 30%;
+    }
+    .todayForecast{
+padding-right: 0.9rem;
+    }
+    .airConditions{
+padding-right:0.9rem;
+    }
+} */
