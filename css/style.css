@@ -208,6 +208,19 @@ transform: rotate(-90.1deg);
     
  }
  .dash{
+    background-color: yellow;
+    text-align: center;
+    width: 100px;
+    height: 50px;
+    display: none;
+   
+ }
+ span:hover{
+    background-color: #00000055;
+   
+ }
+ span:hover + .dash {
+    display: block;
     position: absolute;
     left: 125px;
     top: 50%;
@@ -216,14 +229,7 @@ transform: rotate(-90.1deg);
     border-radius: .4rem 1.2rem;
     line-height: 2.8rem;
     z-index: 20;
-    color: #FFFFFF;
-    /* opacity: 0; */
-}
-div:hover .dash{
-    opacity: 1;
-   background-color: #12171e74;
-   color: aliceblue;
-}
+ }
  
  /* -----------------Air Conditions-------------------------------- */
  .airConditions{
