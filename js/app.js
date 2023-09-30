@@ -14,7 +14,9 @@ let realFeel=document.getElementById("realTxt");
 let wind=document.getElementById("windTxt");
 let rain=document.getElementById("rainTxt");
 let uv=document.getElementById("uvTxt");
-fetchWeatherData("Anuradhapura");
+//fetchWeatherData("Anuradhapura");
+
+
 
 function fetchWeatherData(location) {
     $.ajax({
@@ -44,3 +46,43 @@ function fetchWeatherData(location) {
       }
    });
   }
+  function localTime(){
+    let morningTime=document.getElementById("morningTime");
+    let nowTime=new Date();
+    let localTime = nowTime.toLocaleTimeString();
+    morningTime.textContent =`${localTime}`;
+  }
+  localTime();
+  setInterval(localTime,1000);
+
+
+  var x = document.getElementById("demo");
+
+  //-----------------------------------------------------------------------------------
+
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.watchPosition(showPosition);
+  } else {
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+function showPosition(position) {
+    fetchWeatherData(position.coords.latitude+","+position.coords.longitude);
+}
+
+
+
+//---------------------------------------------------------------------------------------
+
+getForecast("2023-09-25","2023-09-28");
+
+function getForecast(startDate,endDate){
+    $.ajax({
+        method : "GET",
+        url: `http://api.weatherapi.com/v1/history.json?key=${apiKey}&q=Panadura&dt=${startDate}&end_dt=${endDate}`,
+        success : (resp) => {
+            console.log(resp);
+        }});
+}
