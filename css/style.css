@@ -14,7 +14,7 @@ body{
     
     background-position: center;
     background-size: cover;
-    height: 110vh;
+    height: 140vh;
     
     
     
@@ -99,7 +99,7 @@ background-color: #333;
     margin-right: 10%;
     margin-bottom: 4%;
 }
- /* --------------Current------------------------------------ */
+ /* --------------Current forecast------------------------------------ */
  .currentWeather{
 
 
@@ -109,8 +109,8 @@ position: absolute;
 width: 468.33px;
 height: 119.8px;
 right: 74%;
-margin-top: 8.5%;
-margin-bottom: 5%;
+margin-top: 5.10%;
+margin-bottom: 40%;
 border: 1px solid #000000;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.33);
 border-radius: 10px;
@@ -287,34 +287,24 @@ span:hover + .dashEarth {
  }
  .dashMap{
     position: absolute;
-    background-color: rgb(210, 210, 113);
+    background-color: rgb(4, 45, 46);
     width: 100px;
     height: 100px;
     display: none;
     text-align: justify;
-    border: 2px solid black;  bottom: 90px;
+    border: 10px solid rgb(210, 210, 113);  bottom: 90px;
     padding-bottom: 520%;
     padding-left: 500%;
     padding-right: 400%;
     margin-left: 466%;
     }
-/* span:hover + .dashMap {
-    display: block;
-    position: absolute;
-    left: 125px;
-    top: 1%;
-    transform: translate(-50%, -65%);
-    box-shadow: 0 0.5rem 0.7rem rgba(0,0,0,0.2);
-    border-radius: .4rem 1.2rem;
-    line-height: 2.8rem;
-    z-index: 20;
- } */
+
  .dashMap.active{
     display: block;
     position: absolute;
     left: 125px;
     top: 1%;
-    transform: translate(-50%, -65%);
+    transform: translate(-50%, -55%);
     box-shadow: 0 0.5rem 0.7rem rgba(0,0,0,0.2);
     border-radius: .4rem 1.2rem;
     line-height: 2.8rem;
@@ -332,11 +322,7 @@ span:hover + .dashEarth {
  .dashMap.active #btnMap {
     left: 90%;
  }
- .subDashMap{
-    width: 100px;
-    height: 100px;
-    background-color: #1171d1;
- }
+
 .locationDetails{
     color: #0a28c0;
 }
@@ -490,17 +476,16 @@ z-index: -1;
 
 /* -----------------7-Days---------------------------- */
 .daysForecast{
-   
-
 position: absolute;
 width: 280px;
 height: 400px;
 left: 40%;
 border-radius: 10px;
 margin-left: 34%;
-margin-bottom: 90%;
+/* margin-bottom: 90%; */
+top:61%;
 background-color: #ffffff42;
-
+z-index: -1;
 }
 
 .days{
@@ -550,12 +535,8 @@ color: #FFFFFF;
 .underLine{
     width: 240px;
 }
-
-
-/* --------------------todays------------------------------------ */
+/* =========================today forecast================ */
 .todayForecast{
-
-
     position: absolute;
     width: 694px;
     height: 164px;
@@ -567,6 +548,7 @@ color: #FFFFFF;
     
     margin-left: 14%;
     margin-top: 12.3%;
+    z-index: -1;
     
          }
 .todayForecastH4{

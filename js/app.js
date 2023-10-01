@@ -1,7 +1,7 @@
 function serchWeather(){
   let txt  =document.getElementById("searchTxt").value;
-
     fetchWeatherData(txt);
+    txt  =document.getElementById("searchTxt").value='';
 }
 
 let apiKey="0a292b3696fb41b8af061802233009";
@@ -80,7 +80,9 @@ function getForecast(startDate,endDate){
         success : (resp) => {
             console.log(resp);
         }});
+
 }
+// -------------------------------------------------
 let btnMap=document.querySelector('#btnMap');
 let map=document.querySelector('.dashMap');
 
