@@ -286,39 +286,56 @@ span:hover + .dashEarth {
     z-index: 20;
  }
  .dashMap{
-    position: sticky;
+    position: absolute;
     background-color: rgb(210, 210, 113);
     width: 100px;
     height: 100px;
     display: none;
     text-align: justify;
-    padding-bottom: 370%;
-    padding-top: 100%;
-    margin-left: 40%;
-    /* margin-left: 466%; */
-    /* margin-bottom:900%; */
-  
-    /* width: 700px;
-    height: 300px;
-    
-    
-    padding-bottom: 200%;
-    padding-right: 450%;
-    padding-top: 400%;
     border: 2px solid black;  bottom: 90px;
-     */
-}
-span:hover + .dashMap {
+    padding-bottom: 520%;
+    padding-left: 500%;
+    padding-right: 400%;
+    margin-left: 466%;
+    }
+/* span:hover + .dashMap {
     display: block;
     position: absolute;
     left: 125px;
     top: 1%;
-    
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -65%);
     box-shadow: 0 0.5rem 0.7rem rgba(0,0,0,0.2);
     border-radius: .4rem 1.2rem;
     line-height: 2.8rem;
     z-index: 20;
+ } */
+ .dashMap.active{
+    display: block;
+    position: absolute;
+    left: 125px;
+    top: 1%;
+    transform: translate(-50%, -65%);
+    box-shadow: 0 0.5rem 0.7rem rgba(0,0,0,0.2);
+    border-radius: .4rem 1.2rem;
+    line-height: 2.8rem;
+ }
+ .dashMap #btnMap {
+    position: absolute;
+    color: azure;
+    top: .4rem;
+    left: 50%;
+    font-size: 1.2rem;
+    line-height: 50px;
+    transform: translate(-50%);
+    cursor: pointer;
+ }
+ .dashMap.active #btnMap {
+    left: 90%;
+ }
+ .subDashMap{
+    width: 100px;
+    height: 100px;
+    background-color: #1171d1;
  }
 .locationDetails{
     color: #0a28c0;

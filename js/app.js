@@ -81,3 +81,9 @@ function getForecast(startDate,endDate){
             console.log(resp);
         }});
 }
+let btnMap=document.querySelector('#btnMap');
+let map=document.querySelector('.dashMap');
+
+btnMap.onclick=function(){
+  map.classList.toggle('active');
+}
