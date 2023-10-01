@@ -158,6 +158,7 @@ transform: rotate(-90.1deg);
     margin-left: 27%;
     margin-top: 5%;
     color: #FFFFFF;
+    z-index: -1;
 }
 .eventCurrent1:hover{
     color: #fff;
@@ -166,21 +167,25 @@ transform: rotate(-90.1deg);
     margin-left: 18%;
     margin-top: 5%;
     color: #FFFFFF;
+    z-index: -1;
 }
 .eventCurrent3{
     margin-left: 20%;
     margin-top: 5%;
     color: #FFFFFF;
+    z-index: -1;
 }
 .eventCurrent4{
     margin-left: 30%;
     margin-top: 5%;
     color: #FFFFFF;
+    z-index: -1;
 }
 .eventCurrent5{
     margin-left: 24%;
     margin-top: 5%;
     color: #FFFFFF;
+    z-index: -1;
 }
 .iconCurrentWind{
     width: 50px;
@@ -208,12 +213,13 @@ transform: rotate(-90.1deg);
     
  }
  .dash{
-    background-color: yellow;
+    background-color: rgb(210, 210, 113);
     text-align: center;
-    width: 100px;
+    width: 200px;
     height: 50px;
     display: none;
-   
+    margin-left: 85%;
+  color: #000000;
  }
  span:hover{
     background-color: #00000055;
@@ -229,8 +235,97 @@ transform: rotate(-90.1deg);
     border-radius: .4rem 1.2rem;
     line-height: 2.8rem;
     z-index: 20;
+    border: 2px solid black;
  }
- 
+.dashLocation{
+    position: sticky;
+    background-color: rgb(210, 210, 113);
+    width: 200px;
+    height: 100px;
+    display: none;
+    margin-left: 95%;
+    margin-top: 80%;
+    border: 2px solid black;
+    padding-left: 10px;
+    width: 200px;
+    height: 200px;
+    text-align: justify;
+}
+span:hover + .dashLocation {
+    display: block;
+    position: absolute;
+    left: 125px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0.5rem 0.7rem rgba(0,0,0,0.2);
+    border-radius: .4rem 1.2rem;
+    line-height: 2.8rem;
+    z-index: 20;
+ }
+ .dashEarth{
+    position: sticky;
+    background-color: rgb(210, 210, 113);
+    width: 200px;
+    height: 100px;
+    display: none;
+    margin-left: 95%;
+    margin-top: 80%;
+    border: 2px solid black;
+    padding-left: 10px;
+    text-align: justify;
+}
+span:hover + .dashEarth {
+    display: block;
+    position: absolute;
+    left: 125px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0.5rem 0.7rem rgba(0,0,0,0.2);
+    border-radius: .4rem 1.2rem;
+    line-height: 2.8rem;
+    z-index: 20;
+ }
+ .dashMap{
+    position: sticky;
+    background-color: rgb(210, 210, 113);
+    width: 100px;
+    height: 100px;
+    display: none;
+    text-align: justify;
+    padding-bottom: 370%;
+    padding-top: 100%;
+    margin-left: 40%;
+    /* margin-left: 466%; */
+    /* margin-bottom:900%; */
+  
+    /* width: 700px;
+    height: 300px;
+    
+    
+    padding-bottom: 200%;
+    padding-right: 450%;
+    padding-top: 400%;
+    border: 2px solid black;  bottom: 90px;
+     */
+}
+span:hover + .dashMap {
+    display: block;
+    position: absolute;
+    left: 125px;
+    top: 1%;
+    
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0.5rem 0.7rem rgba(0,0,0,0.2);
+    border-radius: .4rem 1.2rem;
+    line-height: 2.8rem;
+    z-index: 20;
+ }
+.locationDetails{
+    color: #0a28c0;
+}
+.locationName{
+    font-size: 12px;
+}
  /* -----------------Air Conditions-------------------------------- */
  .airConditions{
    
@@ -251,7 +346,7 @@ border: 1px solid #000000;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 10px;
 background-color: #ffffff42;
-
+z-index: -1;
  }
  .btnSee{
     font-weight: 700;

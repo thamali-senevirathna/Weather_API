@@ -22,7 +22,10 @@
                             class='bx bx-search-alt'></i></button></input>
                     <!-- <button id="search" onclick="searchByCity()">Search</button></input> -->
                 </div>
-
+                 <div>
+                    Start Date :
+                    End Date :
+                 </div>
             </div>
         </header>
         <!--------------------------------------------------------------------------------------------------------->
@@ -99,25 +102,57 @@
                     </div>
                     <div class="currentMap">
                         <img src="icon/icons8-map-100.png" class="iconCurrentMap">
-                        <p class="eventCurrent4">map</p>
+                        <span class="eventCurrent4">map</span>
+                        <div class="dashMap">
+
+                        </div>
                     </div>
                     <div class="currentArea">
                         <img src="icon/icons8-location-94.png" class="iconCurrentLocation">
                         <span class="eventCurrent3">location</span>
-                        <!-- <span class="dash">location</span> -->
-                        <div class="dash">Location</div>
+                        <div class="dashLocation" id="locationDetails">
+                            <table>
+                                    <tr>
+                                        <td id="country" class="locationDetails">Country :</td>
+                                        <td class="locationName">Sri Lanka</td>
+                                    </tr>
+                                    <tr>
+                                        <td id="region" class="locationDetails">Region&nbsp; :</td>
+                                        <td class="locationName">Western</td>
+                                    </tr>
+                                    <tr>
+                                        <td id="area" class="locationDetails">Area&nbsp;&nbsp;&nbsp;&nbsp; :</td>
+                                        <td class="locationName">Panadura</td>
+                                    </tr>
+                                    <tr>
+                                        <td id="tzId" class="locationDetails">Tz_Id&nbsp;&nbsp; :</td>
+                                        <td class="locationName">Asia /Colombo</td>
+                                    </tr>
+                            </table>
+                            
+                        </div>
                     </div>
                     <div class="wetherCurrent">
                         <img src="icon/current cloud.png" class="iconCurrentWeather">
                         <span class="eventCurrent2">weather</span>
-                        <div class="dash">Weather</div>
-                        <!-- <span class="dash">weather</span> -->
+                        <div class="dash" id="weatherStatus">Weather</div>
                     </div>
                     <div class="currentWind">
-                        <img src="icon/icons8-wind-96.png" class="iconCurrentWind">
-                        <span class="eventCurrent1">wind</span>
-                       <div class="dash">Wind</div>
-                        <!-- <span class="dash">wind</span> -->
+                        <img src="icon/icons8-geography-80.png" class="iconCurrentWind">
+                        <span class="eventCurrent1">Earth</span>
+                       <div class="dashEarth">
+                        <table>
+                            <tr>
+                                <td class="locationDetails">Latitude&nbsp;&nbsp;&nbsp;&nbsp;:</td>
+                                <td class="locationName" id="lat"></td>
+                            </tr>
+                            <tr>
+                                <td class="locationDetails">Longitude :</td>
+                                <td class="locationName" id="lon">&nbsp;&nbsp;</td>
+                            </tr>
+                        </table>
+                       </div>
+                       
                     </div>
 
                 </div>
