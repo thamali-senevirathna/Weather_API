@@ -16,7 +16,7 @@ let rain=document.getElementById("rainTxt");
 let uv=document.getElementById("uvTxt");
 //fetchWeatherData("Anuradhapura");
 
-
+fetchWeatherData("Panadura");
 
 function fetchWeatherData(location) {
     $.ajax({
@@ -46,20 +46,17 @@ function fetchWeatherData(location) {
       }
    });
   }
-//   function localTime(){
-//     let morningTime=document.getElementById("morningTime");
-//     let nowTime=new Date();
-//     let localTime = nowTime.toLocaleTimeString();
-//     morningTime.textContent =`${localTime}`;
-//   }
-//   localTime();
-//   setInterval(localTime,1000);
+  // function localTime(){
+  //   let morningTime=document.getElementById("morningTime");
+  //   let nowTime=new Date();
+  //   let localTime = nowTime.toLocaleTimeString();
+  //   morningTime.textContent =`${localTime}`;
+  // }
+  // localTime();
+  // setInterval(localTime,1000);
 
-
-  var x = document.getElementById("demo");
 
   //-----------------------------------------------------------------------------------
-
 
 function getLocation() {
   if (navigator.geolocation) {
@@ -69,9 +66,8 @@ function getLocation() {
   }
 }
 function showPosition(position) {
+  console.log(position.coords.latitude+","+position.coords.longitude);
     fetchWeatherData(position.coords.latitude+","+position.coords.longitude);
-    // fetchWeatherData(icon.coords.latitude+","+icon.coords.longitude);
-    // icon.src=position.coords.latitude+","+position.coords.longitude;
 }
 
 
