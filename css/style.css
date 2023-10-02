@@ -10,7 +10,7 @@ body{
     background-size: cover;
     font-family: 'Roboto', sans-serif;
     text-transform: capitalize;
-    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url('/img/backgroud.jpg');
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url('/img/backgroudimg.jpg');
     
     background-position: center;
     background-size: cover;
