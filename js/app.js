@@ -42,6 +42,7 @@ function fetchWeatherData(location) {
       lon.innerHTML = data.location.lon + " λ ";
     },
   });
+  // ----------------------------------------------------------------------------------
 }
 // function localTime(){
 //   let morningTime=document.getElementById("morningTime");
@@ -65,6 +66,7 @@ function showPosition(position) {
   console.log(position.coords.latitude + "," + position.coords.longitude);
   fetchWeatherData(position.coords.latitude + "," + position.coords.longitude);
 }
+// -----------------------------------------------------------------------------
 
 // ----------------------------------------------------------------------------------------------------
 searchForecast();
