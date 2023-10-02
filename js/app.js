@@ -11,7 +11,7 @@ let cityText=document.getElementById("city");
 let locationDetails=document.getElementById("locationDetails");
 
 let icon = document.getElementById("imgAreaWeather");
-let realFeel=document.getElementById("realTxt");
+let humidity=document.getElementById("humidityTxt");
 let wind=document.getElementById("windTxt");
 let rain=document.getElementById("rainTxt");
 let uv=document.getElementById("uvTxt");
@@ -33,7 +33,7 @@ function fetchWeatherData(location) {
          tempText.innerHTML=data.current.temp_c+ "°C";
         cityText.innerHTML=data.location.name;
         icon.src=data.current.condition.icon;
-         realFeel.innerHTML=data.current.feelslike_f+ " °F";
+        humidity.innerHTML=data.current.humidity+ " % ";
           wind.innerHTML=data.current.wind_kph+ " kph";
           rain.innerHTML=data.current.precip_mm+ " mm";
           uv.innerHTML=data.current.uv;
