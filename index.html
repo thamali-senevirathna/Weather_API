@@ -22,10 +22,10 @@
                             class='bx bx-search-alt'></i></button></input>
                     <!-- <button id="search" onclick="searchByCity()">Search</button></input> -->
                 </div>
-                 <div>
+                <div>
                     Start Date :
                     End Date :
-                 </div>
+                </div>
             </div>
         </header>
         <!--------------------------------------------------------------------------------------------------------->
@@ -103,31 +103,36 @@
                     <div class="currentMap">
                         <img src="icon/icons8-map-100.png" class="iconCurrentMap">
                         <span class="eventCurrent4" id="btnMap">map</span>
-                        <div class="dashMap" > </div>
+                        <div class="dashMap">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4047213.2839410105!2d80.70625!3d7.857684999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2slk!4v1696220686058!5m2!1sen!2slk"
+                                width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade" class="goal"></iframe> 
+                            </div>
                     </div>
                     <div class="currentArea">
                         <img src="icon/icons8-location-94.png" class="iconCurrentLocation">
                         <span class="eventCurrent3">location</span>
                         <div class="dashLocation" id="locationDetails">
                             <table>
-                                    <tr>
-                                        <td id="country" class="locationDetails">Country :</td>
-                                        <td class="locationName">Sri Lanka</td>
-                                    </tr>
-                                    <tr>
-                                        <td id="region" class="locationDetails">Region&nbsp; :</td>
-                                        <td class="locationName">Western</td>
-                                    </tr>
-                                    <tr>
-                                        <td id="area" class="locationDetails">Area&nbsp;&nbsp;&nbsp;&nbsp; :</td>
-                                        <td class="locationName">Panadura</td>
-                                    </tr>
-                                    <tr>
-                                        <td id="tzId" class="locationDetails">Tz_Id&nbsp;&nbsp; :</td>
-                                        <td class="locationName">Asia /Colombo</td>
-                                    </tr>
+                                <tr>
+                                    <td id="country" class="locationDetails">Country :</td>
+                                    <td class="locationName">Sri Lanka</td>
+                                </tr>
+                                <tr>
+                                    <td id="region" class="locationDetails">Region&nbsp; :</td>
+                                    <td class="locationName">Western</td>
+                                </tr>
+                                <tr>
+                                    <td id="area" class="locationDetails">Area&nbsp;&nbsp;&nbsp;&nbsp; :</td>
+                                    <td class="locationName">Panadura</td>
+                                </tr>
+                                <tr>
+                                    <td id="tzId" class="locationDetails">Tz_Id&nbsp;&nbsp; :</td>
+                                    <td class="locationName">Asia /Colombo</td>
+                                </tr>
                             </table>
-                            
+
                         </div>
                     </div>
                     <div class="wetherCurrent">
@@ -135,22 +140,22 @@
                         <span class="eventCurrent2">weather</span>
                         <div class="dash" id="weatherStatus">Weather</div>
                     </div>
-                    <div class="currentWind">
+                    <div class="currentEarth">
                         <img src="icon/icons8-geography-80.png" class="iconCurrentWind">
                         <span class="eventCurrent1">Earth</span>
-                       <div class="dashEarth">
-                        <table>
-                            <tr>
-                                <td class="locationDetails">Latitude&nbsp;&nbsp;&nbsp;&nbsp;:</td>
-                                <td class="locationName" id="lat"></td>
-                            </tr>
-                            <tr>
-                                <td class="locationDetails">Longitude :</td>
-                                <td class="locationName" id="lon">&nbsp;&nbsp;</td>
-                            </tr>
-                        </table>
-                       </div>
-                       
+                        <div class="dashEarth">
+                            <table>
+                                <tr>
+                                    <td class="locationDetails">Latitude&nbsp;&nbsp;&nbsp;&nbsp;:</td>
+                                    <td class="locationName" id="lat"></td>
+                                </tr>
+                                <tr>
+                                    <td class="locationDetails">Longitude :</td>
+                                    <td class="locationName" id="lon">&nbsp;&nbsp;</td>
+                                </tr>
+                            </table>
+                        </div>
+
                     </div>
 
                 </div>
@@ -289,9 +294,9 @@
         </div>
 
     </section>
-    
-    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
-    crossorigin="anonymous"></script> 
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script src="js/app.js"></script>
 </body>
 
