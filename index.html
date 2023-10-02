@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather API</title>
+    <title>BEYOND FORECAST</title>
     <link rel="stylesheet" href="css/style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
@@ -22,10 +22,7 @@
                             class='bx bx-search-alt'></i></button></input>
                     <!-- <button id="search" onclick="searchByCity()">Search</button></input> -->
                 </div>
-                <div>
-                    Start Date :
-                    End Date :
-                </div>
+           
             </div>
         </header>
         <!--------------------------------------------------------------------------------------------------------->
@@ -169,7 +166,7 @@
             <!-- ================================================================================================================================== -->
             <div class="airConditions">
                 <p class="air-header">AIR CONDITIONS</p>
-                <button class="btnSee">see more</button>
+            
                 <div class="forecstH">
 
                     <div class="realFeelDiv">
@@ -207,10 +204,10 @@
             <table class="table">
                 <!-- *****sunny Today********* -->
                 <tr>
-                    <td class="days">Today</td>
-                    <td><img src="icon/sun (1).png" class="daysSunnyIcon"></td>
-                    <td class="weatherDay">Sunny</td>
-                    <td class="date">18/09/2023</td>
+                    <td class="days">Mon</td>
+                    <td><img src="icon/sun (1).png" class="daysSunnyIcon" id="icon1"></td>
+                    <td class="weatherDay" id="dayStatus1">Sunny</td>
+                    <td class="date" id="date1">18/09/2023</td>
                 </tr>
                 <!-- ++++++++++under Line+++++++++++++++++++++ -->
                 <tr>
@@ -222,9 +219,9 @@
                 <!-- *****sunny Tue********* -->
                 <tr>
                     <td class="days">Tue</td>
-                    <td><img src="icon/sun (1).png" class="daysSunnyIcon"></td>
-                    <td class="weatherDay">Sunny</td>
-                    <td class="date">18/09/2023</td>
+                    <td><img src="icon/sun (1).png" class="daysSunnyIcon" id="icon2"></td>
+                    <td class="weatherDay" id="dayStatus2">Sunny</td>
+                    <td class="date" id="date2">18/09/2023</td>
                 </tr>
                 <!-- ++++++++++under Line+++++++++++++++++++++ -->
                 <tr>
@@ -235,9 +232,9 @@
                 <!-- *****sunny Wed********* -->
                 <tr>
                     <td class="days">Wed</td>
-                    <td><img src="icon/sun (1).png" class="daysSunnyIcon"></td>
-                    <td class="weatherDay">Sunny</td>
-                    <td class="date">18/09/2023</td>
+                    <td><img src="icon/sun (1).png" class="daysSunnyIcon" id="icon3"></td>
+                    <td class="weatherDay" id="dayStatus3">Sunny</td>
+                    <td class="date" id="date3">18/09/2023</td>
                 </tr>
                 <!-- ++++++++++under Line+++++++++++++++++++++ -->
                 <tr>
@@ -248,9 +245,9 @@
                 <!-- *****cloudy Thu********* -->
                 <tr>
                     <td class="days">Thu</td>
-                    <td><img src="icon/cloudy.png" class="daysCloudyIcon"></td>
-                    <td class="weatherDay">Cloudy</td>
-                    <td class="date">18/09/2023</td>
+                    <td><img src="icon/cloudy.png" class="daysCloudyIcon" id="icon4"></td>
+                    <td class="weatherDay" id="dayStatus4">Cloudy</td>
+                    <td class="date" id="date4">18/09/2023</td>
                 </tr>
                 <!-- ++++++++++under Line+++++++++++++++++++++ -->
                 <tr>
@@ -261,9 +258,9 @@
                 <!-- *****cloudy Fri********* -->
                 <tr>
                     <td class="days">Fri</td>
-                    <td><img src="icon/cloudy.png" class="daysCloudyIcon"></td>
-                    <td class="weatherDay">Cloudy</td>
-                    <td class="date">18/09/2023</td>
+                    <td><img src="icon/cloudy.png" class="daysCloudyIcon" id="icon5"></td>
+                    <td class="weatherDay" id="dayStatus5">Cloudy</td>
+                    <td class="date" id="date5">18/09/2023</td>
                 </tr>
                 <!-- ++++++++++under Line+++++++++++++++++++++ -->
                 <tr>
@@ -274,9 +271,9 @@
                 <!-- *****rainy Sat********* -->
                 <tr>
                     <td class="days">Sat</td>
-                    <td><img src="icon/rainy.png" class="daysRainyIcon"></td>
-                    <td class="weatherDay">Rainy</td>
-                    <td class="date">18/09/2023</td>
+                    <td><img src="icon/rainy.png" class="daysRainyIcon" id="icon6"></td>
+                    <td class="weatherDay" id="dayStatus6">Rainy</td>
+                    <td class="date" id="date6">18/09/2023</td>
                 </tr>
                 <!-- ++++++++++under Line+++++++++++++++++++++ -->
                 <tr>
@@ -287,13 +284,35 @@
                 <!-- *****strom Sun********* -->
                 <tr>
                     <td class="days">Sun</td>
-                    <td><img src="icon/strom.png" class="daysStromIcon"></td>
-                    <td class="weatherDay">Storm</td>
-                    <td class="date">18/09/2023</td>
+                    <td><img src="icon/strom.png" class="daysStromIcon" id="icon7"></td>
+                    <td class="weatherDay" id="dayStatus7">Storm</td>
+                    <td class="date" id="date6">18/09/2023</td>
+                </tr>
+                 <!-- ++++++++++under Line+++++++++++++++++++++ -->
+                 <tr>
+                    <td colspan="4">
+                        <hr class="underLine">
+                    </td>
+                </tr>
+            </table>
+            <table class="tblDate">
+                <tr>
+                    <td class="ds">Start : </td>
+                    <td><input type="date" id="startDate"></td>
+                </tr>
+                <tr>
+                    <td class="de">End&nbsp; :&nbsp;&nbsp;</td>
+                    <td> <input type="date" id="endDate"></td>
                 </tr>
             </table>
         </div>
-
+     <!-- ________This is 7-day forecast date set code__________________________________________ -->
+     <!-- <div class="StartAndEndDate">
+        
+        
+        <button onclick="searchForecast()">Search Date</button>
+    </div> -->
+    <!-- ________________________________________________ -->
 
         </div>
 

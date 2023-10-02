@@ -20,6 +20,11 @@ body{
     
 }
 /* --------------------------------------------------------------------- */
+.StartAndEndDate{
+    margin-left: 40px;
+    margin-top: 30px;
+    color: #fff;
+}
 .searchTxt{
  box-sizing: border-box;
  position: absolute;
@@ -73,7 +78,7 @@ background-color: #333;
 #city{
     font-size: 40px;
     color: #000000;
-    margin-top: 12%;
+    margin-top: 10%;
     margin-right: 20%;
     padding-bottom: 3px;
     color: #FFFFFF;
@@ -567,15 +572,15 @@ z-index: -1;
 }
 
 /* -----------------7-Days---------------------------- */
+
 .daysForecast{
 position: absolute;
-width: 280px;
-height: 400px;
+width: 300px;
+height: 490px;
 left: 40%;
 border-radius: 10px;
 margin-left: 34%;
-/* margin-bottom: 90%; */
-top:61%;
+top:56%;
 background-color: #ffffff42;
 z-index: -1;
 }
@@ -613,11 +618,28 @@ font-size: 12px;
 padding-left: 10%;
 color: #FFFFFF;
 }
+.ds{
+    color: #fff;
+   margin-top: 20px;
+}
+.de{
+    color: #fff;
+}
+#startDate{
+margin-left: 10%;
+}
+#endDate{
+
+}
 .table{
     margin-left: 5%;
     margin-top:10%;
-    width: 176px;
+    width: 196px;
     
+}
+.tblDate{
+    margin-top: 5%;
+    margin-left: 5%;
 }
 .dfp{
     margin-left: 24%;
