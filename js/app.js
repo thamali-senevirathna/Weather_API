@@ -25,7 +25,7 @@ fetchWeatherData("Panadura");
 function fetchWeatherData(location) {
   $.ajax({
     method: "GET",
-    url: `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${location} &aqi=no`,
+    url: `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${location} &aqi=no`,
     success: (data) => {
       console.log(data);
 
@@ -101,7 +101,7 @@ function getForecastTime(startDate, endDate) {
 
   $.ajax({
     method: "GET",
-    url: `http://api.weatherapi.com/v1/history.json?key=${apiKey}&q=Panadura&dt=${startDate}&end_dt=${endDate}`,
+    url: `https://api.weatherapi.com/v1/history.json?key=${apiKey}&q=Panadura&dt=${startDate}&end_dt=${endDate}`,
     success: (res) => {
       for (let i = 0; i < 8; i++) {
         const forecastDay = res["forecast"]["forecastday"][i]["day"];
